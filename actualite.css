@@ -1,0 +1,137 @@
+body {
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+    /* background: #fdfdfd; */
+    background-image: url(plage2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    font-size: 30px;
+}
+header {
+   background-color: #5a1902;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+    ul{
+    align-items: center;
+    justify-content:end;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.1);
+}
+li a:hover{
+    background-image: url(pexels-soubhagya23-5245865.jpg);
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+ h1 {
+    margin: 0;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.introduction {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+.actu {
+    position: relative;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.actu::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #5a1902; /* couleur de la ligne */
+    top: 0;
+    bottom: 0;
+    left: 50%;/* position au centre */
+    margin-right: 2px; /* pour bien centrer la ligne */
+}
+
+.gauche,
+.droite{
+    padding: 20px;
+    position: relative;
+    background-image: url(pexels-soubhagya23-5245865.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+.gauche{
+    left: 0;
+}
+.droite {
+    left: 55%;
+}
+.gauche::before,
+.droite::before {
+    content: ''; /*creer une ligne*/
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10px; /* position par rapport à la ligne */
+    background-color: #5a1902; /* couleur du point */
+    border: 3px solid #fff; /* contour blanc */
+    top: 20px;
+    border-radius: 50%; /* rend le point rond */
+    z-index: 1;
+}
+.droite::before {
+    right: 10px;
+}
+
+.gauche h2,
+.droite h2 {
+    margin-top: 0;
+    color: #5a1902;
+}
+.gauche p,
+.droite p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.gauche img, 
+.droite img {
+    width: 100%;
+    border-radius: 10%;
+    margin: 10px 0;
+}
+footer {
+background: #5a1902;
+color: white;
+text-align: center;
+padding: 15px;
+margin-top: 40px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40%;
+}
+.logo img{
+    width: 70%;
+    border-radius: 70%;
+}

@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-image: url(pexels-fotios-photos-1048273.jpg);
+    background-size: cover;
+    background-position: right;
+    color: beige;
+}
+nav{
+  margin-top: 30px;
+}
+.header{
+  grid-area: header;
+  gap: 40%;
+  background-color: #5a1902;
+  backdrop-filter: blur(30px);
+  display: flex;
+}
+ul{
+  gap: 20px;
+  list-style: none;
+  display: flex;
+}
+li a{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.1);
+}
+li a:hover{
+  background-color: #5B2101;
+}
+.logo img{
+  width: 70%;
+  border-radius: 70%;
+}
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.message{
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #f58d06;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* flex-wrap: wrap; */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #a0522d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e0c097;
+    color: black;
+}
+
+.contact-info {
+    width: 300px;
+}
+.contact-info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    transition: 0.5s ease;
+    background-color: white;
+}
+.contact-info img:hover{
+    transform: translateY(-8px);
+}
+
+.map {
+    margin-top: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #5a1902;
+}
+footer{
+    grid-area: footer;
+    background-color:#5a1902; 
+    text-align: center;
+    padding-top: 40px;
+}

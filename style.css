@@ -1,0 +1,220 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0;
+    background-image:url(baobab2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    color: beige;
+}
+.logo img{
+    width: 70%;
+    border-radius: 70%;
+}
+nav{
+    margin-top: 30px;
+}
+.header{
+    grid-area: header;
+    gap: 40%;
+    background-color: #5a1902;
+    display: flex;
+}
+ul{
+    gap: 20px;
+    list-style: none;
+    display: flex;
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 15px 15px 15px 15px rgba(0,0,0,0.1);
+}
+li a:hover{
+    background-color: #5B2101;
+}
+h1{
+   font-size: 60px;
+   box-shadow: 0 0 0 15px rgb(211, 203, 203);
+   background-color: #5a1902;
+   font-weight: 800;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    box-shadow: 0 8px 8px rgb(211, 203, 203);
+    font-weight: lighter;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+.container{
+display: grid;
+    grid-template-areas:
+        "header header"
+        "section section"
+        "main main"
+        "footer footer";
+    border-radius: 10px;
+    gap: 10px;
+    grid-template-rows: 0.2fr 1.5fr 1.5fr 0.2fr;
+    height: 100%;
+}
+.section{
+    grid-area: section;
+    background-repeat: no-repeat;
+}
+.intro{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+}
+.texte_intro{
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 10px;
+    animation: slideDown 1.5s ease-out;
+}
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        transform: translateY(-90px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.main{
+   grid-area: main;
+}
+.auteurs{
+    padding: 100px 50px;
+    text-align: center;
+}
+.oeuvres-themes{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+.oeuvres{
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    width: 90%;
+    padding: 20px;
+    height: auto;
+    margin-left: 40px;
+}
+.oeuvres a{
+    margin-left: 43%;
+}
+.cards2{
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+.cards1{
+    grid-template-columns: repeat(3,1fr);  
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+    display: flex;
+}
+.themesabordes{
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+}
+.button ,.buttonA{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#5B2101; 
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    animation: fadeIn 2s ease-out;
+}
+@keyframes fadeIn {
+    0%, 100%{opacity: 0;}
+    50%{opacity: 1;}    
+}
+.button:hover{
+    background-color:#5a1902;
+    transform: scale(1.1);
+}
+.card{
+    background-color: #803A13;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    width: 80%;
+    height: 80%;
+}
+.card:hover{
+    box-shadow: 0 15px 30px #5B2101;
+    transform: scale(1.03);
+}
+.card img{
+    width:90%;
+    height: 80%;
+    border-radius: 10px;
+}
+.link{
+    margin-top: 5px;
+}
+.footer{
+    grid-area: footer;
+    background-color:#5a1902; 
+    text-align: center;
+    padding-top: 40px;
+}
+
+                 /* Actualites */
+.actualites{
+    background-color:rgba(0,0,0,0.1);
+    height: 40%;
+    margin-top: 30%;
+}
+.grid-actu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: 5%;
+}
+.card-actu{
+   background-color: #803A13;
+   padding: 20px;
+   border-radius: 15px;
+   transition: 0.3s;
+   height:100%;
+}
+.card-actu:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.buttonA{
+    margin-left: 45%;
+}
+.texte{
+    text-align: center;
+    margin-top: 10%;
+} 
