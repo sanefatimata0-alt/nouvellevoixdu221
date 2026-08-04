@@ -1,146 +1,414 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Les nouvelles voix du 221 | Littérature sénégalaise</title>
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <div class="container">
+
         <header class="header">
-            <div class="logo">
-            <img src="logo.jpeg" alt="logo">
-        </div>
-        <nav>
+
+            <div class="logo-container">
+
+                <a href="index.html" class="logo">
+                    <img src="logo.jpeg" alt="Logo Les Nouvelles Voix du 221">
+                </a>
+
+                <div class="site-title">
+                    <h2>Les Nouvelles Voix du 221</h2>
+                    <span>Littérature Sénégalaise</span>
+                </div>
+
+            </div>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html" class="active">Accueil</a></li>
+
+                    <li><a href="auteurs.html">Auteurs</a></li>
+
+                    <li><a href="oeuvres.html">Œuvres</a></li>
+
+                    <li><a href="actualite.html">Actualités</a></li>
+
+                    <li><a href="cont.html">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <button class="theme-toggle" id="themeToggle">
+                    🌙
+                </button>
+
+                <button class="menu-toggle" id="menuToggle">
+                    ☰
+                </button>
+
+            </div>
+
+        </header>
+
+        <div class="overlay" id="overlay"></div>
+
+        <aside class="mobile-sidebar" id="sidebar">
+
+            <button class="close-sidebar" id="closeSidebar">
+                ×
+            </button>
+
             <ul>
-                <li><a href="index.html">Acceuil</a></li>
-                <li><a href="auteurs.html" target="_blank">Auteurs</a></li>
-                <li><a href="oeuvres.html" target="_blank">Oeuvres</a></li>
-                <li><a href="actualite.html" target="_blank">Actualites</a></li>
-                <li><a href="contact.html" target="_blank">Contacts</a></li>
+
+                <li>
+                    <a href="index.html" class="active">
+                        <i>🏠</i>
+                        Accueil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="auteurs.html">
+                        <i>✍🏻</i>
+                        Auteurs
+                    </a>
+                </li>
+
+                <li>
+                    <a href="oeuvres.html">
+                        <i>📚</i>
+                        Œuvres
+                    </a>
+                </li>
+
+                <li>
+                    <a href="actualite.html">
+                        <i>📰</i>
+                        Actualités
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cont.html">
+                        <i>📩</i>
+                        Contact
+                    </a>
+                </li>
+
             </ul>
-        </nav>
-    </header>
-        <section class="section">
-            <section class="intro">
-        <div class="texte_intro">
-            <h1>Bienvenue</h1>
-            <p>dans l'univaire de la litterature senegalaise contemporine</p>
-            <a href="index.html" class="button">Explorer &rarr;</a>
-        </div>
-    </section>
-    <br>
-    <section class="texte"><p>
-    La littérature africaine est une flamme qui éclaire nos mémoires et guide nos pas. Au cœur du Sénégal, des <br>
-    voix s’élèvent, dignes et puissantes, pour raconter nos histoires et transmettre nos héritages. <br>
-    Avec <em>Une si longue lettre</em> de Mariama Bâ, les femmes inscrivent leur dignité dans la trame du quotidien. <br>
-    <em>L’enfant noir</em> de Camara Laye nous replonge dans l’innocence et la fierté d’une enfance enracinée. <br>
-    <em>Les bouts de bois de Dieu</em> d’Ousmane Sembène résonnent comme un chant de lutte et de solidarité. <br>
-    Quant aux contes d’Amadou Coumba, transmis de génération en génération, ils gardent vivante la sagesse ancestrale. </p>
-  <p>
-    Ce bookclub est né pour prolonger cette flamme: un lieu où les lecteurs se rencontrent, partagent leurs <br>
-    émotions et découvrent ensemble la richesse de la littérature sénégalaise contemporaine. Ici, chaque <br>
-    page tournée devient une passerelle entre passé et présent, entre mémoire et avenir. Ensemble, nous <br>
-    faisons de la lecture non seulement un plaisir, mais aussi un acte de transmission et de célébration culturelle. <br>
-  </p>
-</section>
-<br>
-                 <!-- AUTEURS -->
-    <section class="auteurs">
-        <h2>Auteurs Majeurs</h2>
-        <div class="cards1">
-            <div class="card">
-                <img src="Mariama BA.jfif" alt="Image de Mariama Ba">
-                <h3>Mariama BA</h3>
-                <p>Grande figure de la litterature feminine africaine. <br>
-                    Elle a marque la litterature africaine par son <br>
-                    engagement sur la condition feminine.
+
+        </aside>
+
+
+        <section class="hero reveal">
+
+            <div class="hero-content">
+
+                <h1>
+                    Les nouvelles voix du 221
+                </h1>
+
+                <p>
+                    À la découverte de la littérature sénégalaise contemporaine,
+                    de ses auteurs, ses œuvres et ses histoires.
                 </p>
+
+                <a href="auteurs.html" class="button">
+                    Explorer la littérature →
+                </a>
+
             </div>
-             <div class="card">
-                <img src="OIP.webp" alt="Image ousmane sembene">
-                <h3>Ousmane SEMBENE</h3>
-                <p>Ecrivain et cineaniste, surnomme le <em>"Pere du cinema africain"</em>, <br>
-                    il denonce les injustices sociales et valorisent la culture africaine.</p>
-            </div>
-            <div class="card">
-                <img src="Fatou DIOME.webp" alt="Image Fatou Diome">
-                <h3>Fatou DIOME</h3>
-                <p>Ecrivaine senegalaise connue pour ses oeuvres qui parlent de l'immigration et de l'identite africaine </p>
-            </div>
-        </div>
-        <div class="link">
-            <a href="auteurs.html" class="button" target="_blank">Voir plus</a>
-        </div>
-    </section>
-    </section>
-    <br>
-    <main class="main">
-                 <!-- OEUVRES ET THEMES -->
-    <div class="oeuvres-themes">
-        <section class="oeuvres">
-            <h2>Oeuvres cles</h2>
-            <div class="cards2">
-                <div class="card">
-                    <h3>Une Si Longue Lettre</h3>
-                    <p>Roman sur la condition femenine Senegalaise</p>
-                </div>
-                <!-- <div class="card">
-                    <h3>L'Aventure ambigue</h3>
-                    <p>Conflits entre culture africaine et occidentale</p>
-                </div> -->
-                <div class="card">
-                    <h3>Le Ventre de L'Atlantique</h3>
-                    <p>Reve d'imigration vers l'Europe </p>
-                 </div>
-                 <div class="card">
-                    <h3>Les bouts de Dieu</h3>
-                    <p>conditions de travail imposees par la colonisation</p>
-                 </div>
-                </div>
-                <div class="link">
-                <a href="oeuvres.html" class="button" target="_blank">Voir plus</a>
-            </div>
+
         </section>
-            <section class="themesabordes">
-            <h2>Theme abordes</h2>
-            <div class="themes">
-                <div class="theme">Identites culturelle</div>
-                <div class="theme">Tradition et modernite</div>
-                <div class="theme">Migration</div>
-                <div class="theme">Condition feminine</div>
-                <div class="theme">Memoire historique</div>
-            </div>
+
+
+
+
+        <section class="presentation reveal">
+
+            <h2>Notre univers</h2>
+
+            <p>
+                La littérature africaine est une mémoire vivante qui transmet
+                nos histoires, nos traditions et nos rêves.
+            </p>
+
+            <p>
+                Ce bookclub est un espace dédié à la découverte des écrivains
+                sénégalais contemporains et au partage autour de leurs œuvres.
+            </p>
+
         </section>
-    </div>
-    <br>
-                    <!-- Actualites -->
-        <section class="actualites">
-                <h2>Actualites litteraires</h2>
-                <div class="grid-actu">
-                    <div class="card-actu">
-                        <h3>Conference du Docteur SARR a Dakar</h3>
-                        <p>Debat sur l'identite culturelle et la jeunesse africaine</p>
-                    </div>
-                    <div class="card-actu">
-                        <h3>Succes international de Mbougar SARR</h3>
-                        <p>Un auteur Senegalais au rayonnement mondial</p>
-                    </div>
-                    <div class="card-actu">
-                        <h3>Reedition de Mariama Ba</h3>
-                        <p>Une oeuvre classique remise au gout du jour</p>
-                    </div>
+
+
+
+
+
+        <section class="section-block reveal">
+
+            <h2>Auteurs majeurs</h2>
+
+
+            <div class="cards">
+
+
+                <article class="card">
+
+                    <img src="Mariama BA.jfif" alt="Mariama Ba">
+
+                    <h3>Mariama Bâ</h3>
+
+                    <p>
+                        Grande figure de la littérature africaine,
+                        elle a marqué son époque par son engagement
+                        pour la condition féminine.
+                    </p>
+
+                </article>
+
+
+
+                <article class="card">
+
+                    <img src="OIP.webp" alt="Ousmane Sembène">
+
+                    <h3>Ousmane Sembène</h3>
+
+                    <p>
+                        Écrivain et cinéaste surnommé
+                        le père du cinéma africain.
+                        Il dénonce les injustices sociales.
+                    </p>
+
+                </article>
+
+
+
+                <article class="card">
+
+                    <img src="Fatou DIOME.webp" alt="Fatou Diome">
+
+                    <h3>Fatou Diome</h3>
+
+                    <p>
+                        Écrivaine sénégalaise connue pour ses œuvres
+                        sur l'immigration et l'identité africaine.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+
+            <a href="auteurs.html" class="button">
+                Voir tous les auteurs
+            </a>
+
+
+        </section>
+
+
+
+
+
+
+
+        <section class="two-columns reveal">
+
+
+            <div class="section-block">
+
+                <h2>Œuvres clés</h2>
+
+
+                <div class="cards small">
+
+
+                    <article class="card">
+
+                        <h3>
+                            Une si longue lettre
+                        </h3>
+
+                        <p>
+                            Un roman sur la condition féminine
+                            sénégalaise.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="card">
+
+                        <h3>
+                            Le Ventre de l'Atlantique
+                        </h3>
+
+                        <p>
+                            Une réflexion sur l'immigration
+                            et les rêves d'ailleurs.
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="card">
+
+                        <h3>
+                            Les bouts de bois de Dieu
+                        </h3>
+
+                        <p>
+                            Une œuvre engagée sur les luttes
+                            sociales africaines.
+                        </p>
+
+                    </article>
+
+
                 </div>
-            <div class="link">
-                <a href="actualite.html" class="buttonA" target="_blank">Voir plus</a>
+
+
+                <a href="oeuvres.html" class="button">
+                    Découvrir les œuvres
+                </a>
+
+
             </div>
+
+
+
+
+
+            <div class="section-block">
+
+                <h2>Thèmes abordés</h2>
+
+
+                <div class="themes">
+
+                    <span>Identité culturelle</span>
+
+                    <span>Tradition et modernité</span>
+
+                    <span>Migration</span>
+
+                    <span>Condition féminine</span>
+
+                    <span>Mémoire historique</span>
+
+                </div>
+
+
+            </div>
+
+
+
         </section>
-        </main>
+
+
+
+
+
+
+
+        <section class="section-block reveal">
+
+
+            <h2>Actualités littéraires</h2>
+
+
+            <div class="cards">
+
+
+                <article class="card">
+
+                    <h3>
+                        Conférence littéraire à Dakar
+                    </h3>
+
+                    <p>
+                        Débat autour de l'identité culturelle
+                        et de la jeunesse africaine.
+                    </p>
+
+                </article>
+
+
+
+                <article class="card">
+
+                    <h3>
+                        Succès international de Mbougar Sarr
+                    </h3>
+
+                    <p>
+                        Un auteur sénégalais reconnu
+                        sur la scène mondiale.
+                    </p>
+
+                </article>
+
+
+
+                <article class="card">
+
+                    <h3>
+                        Réédition de Mariama Bâ
+                    </h3>
+
+                    <p>
+                        Une œuvre classique redécouverte
+                        par une nouvelle génération.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+
+            <a href="actualite.html" class="button">
+                Voir les actualités
+            </a>
+
+
+        </section>
+
+
+
+
+
         <footer class="footer">
-            <!-- PIEDS DE PAGE  -->
-        <p>&copy; 2026 Les nouvelles voix du 221 -"🌺Les parole d'hier,la plume d'aujourd'hui🌺" <br>Tous droits réservés</p>
+
+            <p>
+                © 2026 Les nouvelles voix du 221 🌺
+                <br>
+                "Les paroles d’hier, la plume d’aujourd’hui"
+            </p>
+
         </footer>
+
+
     </div>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
