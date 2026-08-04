@@ -1,74 +1,330 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width-device-width, initial-scale=1.0">
-  <title>Actualités</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Actualités | Les nouvelles voix du 221</title>
+
   <link rel="stylesheet" href="actualite.css">
+  <link rel="stylesheet" href="global.css">
+
 </head>
+
+
 <body>
-  <header>
-    <div class="navbar">
-    <div class="logo">
-            <img src="logo.jpeg" alt="logo">
-        </div>
-     <nav>
-            <ul>
-                <li><a href="Grid2.html">Acceuil</a></li>
-                <li><a href="auteurs.html" target="_blank">Auteurs</a></li>
-                <li><a href="oeuvres.html">Oeuvres</a></li>
-                <li><a href="actualite.html">Actualites</a></li>
-                <li><a href="cont.html" target="_blank">Contacts</a></li>
-            </ul>
-        </nav>
+
+
+  <header class="header">
+
+    <div class="logo-container">
+
+      <a href="index.html" class="logo">
+        <img src="logo.jpeg" alt="Logo Les Nouvelles Voix du 221">
+      </a>
+
+      <div class="site-title">
+        <h2>Les Nouvelles Voix du 221</h2>
+        <span>Littérature Sénégalaise</span>
+      </div>
+
     </div>
-         <h1>Actualités Littéraires</h1>
+
+    <nav>
+
+      <ul class="nav-links">
+
+        <li><a href="index.html" class="active">Accueil</a></li>
+
+        <li><a href="auteurs.html">Auteurs</a></li>
+
+        <li><a href="oeuvres.html">Œuvres</a></li>
+
+        <li><a href="actualite.html">Actualités</a></li>
+
+        <li><a href="cont.html">Contact</a></li>
+
+      </ul>
+
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="theme-toggle" id="themeToggle">
+        🌙
+      </button>
+
+      <button class="menu-toggle" id="menuToggle">
+        ☰
+      </button>
+
+    </div>
+
   </header>
 
-  <div class="introduction">
-    <p>Un fil vivant des événements et parutions qui nourrissent la littérature sénégalaise et africaine.</p>
-  </div>
+  <div class="overlay" id="overlay"></div>
 
-  <div class="actu">
-    <div class="gauche">
-      <h2>Huitieme edition du salon international du livre de thies</h2>
-      <img src="salon de lecture.jfif" alt="Conférence du Dr Sarr à Dakar">
-      <p>La huiteme edition du salon international du livre de thies se tiendra du 23 au 26 Avril a la place de France dans la capitale du rail(Thies).
-        Cet evenement annuel, organise par l'ecrivain et l'editeur Moustapha Ndene Ndiaye, met l'accent sur le theme <strong>Ecrire en langues nationales: 
-        entre souverainete et universalite</strong>, avec une lecon inaugurable prononce par l'auteur et poete Abdoulaye Racine Senghor.
+  <aside class="mobile-sidebar" id="sidebar">
+
+    <button class="close-sidebar" id="closeSidebar">
+      ×
+    </button>
+
+    <ul>
+
+      <li>
+        <a href="index.html">
+          <i>🏠</i>
+          Accueil
+        </a>
+      </li>
+
+      <li>
+        <a href="auteurs.html">
+          <i>✍🏻</i>
+          Auteurs
+        </a>
+      </li>
+
+      <li>
+        <a href="oeuvres.html">
+          <i>📚</i>
+          Œuvres
+        </a>
+      </li>
+
+      <li>
+        <a href="actualite.html" class="active">
+          <i>📰</i>
+          Actualités
+        </a>
+      </li>
+
+      <li>
+        <a href="cont.html">
+          <i>📩</i>
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+  </aside>
+
+
+
+
+
+  <main>
+
+
+    <section class="introduction">
+
+
+      <h1>
+        Actualités littéraires
+      </h1>
+
+
+      <p>
+        Un fil vivant des événements, rencontres et parutions
+        qui font évoluer la littérature sénégalaise et africaine.
       </p>
-    </div>
 
-    <div class="droite">
-      <h2>Succès international de Mohamed Mbougar Sarr</h2>
-      <img src="prix.jpg" alt="Portrait de Mohamed Mbougar Sarr">
-      <p>L'ecrivain senegalais Mohamed Mbougar Sarr continu d'etre une figure majeure de la litterature francophone apres avoir remporte le 
-        <strong>Prisx Goncourt en 2021</strong> pour son roman <strong>La plus secrete memoire des hommes</strong>, faisant de lui le <strong>premier auteur d'Afrique subsaharienne a obtenir ce prestigieux prix litteraire</strong>.
-        Son oeuvre, saluee par son ambition narrative et sa profondeur, reste un sujet d'interet dans les milieux litteraires
-        internationaux, sucitant des traductions, des analyses critiques et une presence durable dans les discussions
-        sur la titterature mondiale.
-      </p>
-    </div>
 
-    <div class="gauche">
-      <h2>Réédition de Mariama Bâ par Angèle Diabang</h2>
-      <img src="reedition.jpg" alt="Mariama Bâ et Angèle Diabang">
-      <p>Quarante-cinq ans après, <em>Une si longue lettre</em> retrouve une nouvelle vie. 
-      Angèle Diabang, réalisatrice engagée, offre à Mariama Bâ une voix cinématographique, 
-      où les silences des femmes deviennent lumière et mémoire.</p>
-    </div>
+    </section>
 
-    <div class="droite">
-      <h2><em>Terre ceinte</em> adapté en podcast par RFI</h2>
-      <img src="reedition terre ceinte.jpeg" alt="Couverture du roman Terre ceinte">
-      <p>Dans les ruelles assiégées de Kalep, les voix résonnent désormais à travers les ondes. 
-      RFI transforme <em>Terre ceinte</em> en une fresque sonore, où la résistance et l’espoir se racontent au rythme des respirations et des silences.</p>
-    </div>
-  </div>
 
-  <footer>
-    <p>&copy; 2026 Les nouvelles voix du 211 -"🌺Les parole d'hier,la plume d'aujourd'hui🌺" <br>Tous droits réservés</p>
+
+
+
+
+    <section class="actu">
+
+
+
+      <article class="gauche">
+
+
+        <h2>
+          8ème édition du Salon international du livre de Thiès
+        </h2>
+
+
+        <img src="salon de lecture.jfif" alt="Salon international du livre de Thiès">
+
+
+
+        <p>
+
+          La huitième édition du Salon international du livre de Thiès
+          se tiendra du 23 au 26 avril à la Place de France.
+
+          Cet événement annuel met l’accent sur le thème :
+
+          <strong>
+            « Écrire en langues nationales : entre souveraineté et universalité »
+          </strong>
+
+          avec une leçon inaugurale prononcée par
+          Abdoulaye Racine Senghor.
+
+        </p>
+
+
+      </article>
+
+
+
+
+
+
+
+      <article class="droite">
+
+
+        <h2>
+          Succès international de Mohamed Mbougar Sarr
+        </h2>
+
+        <img src="prix.jpg" alt="Mohamed Mbougar Sarr Prix Goncourt">
+        <p>
+
+          L’écrivain sénégalais Mohamed Mbougar Sarr continue
+          d’occuper une place majeure dans la littérature francophone.
+
+          Son roman :
+
+          <strong>
+            La plus secrète mémoire des hommes
+          </strong>
+
+          a remporté le prestigieux Prix Goncourt en 2021,
+          faisant de lui le premier écrivain d’Afrique subsaharienne
+          à obtenir cette distinction.
+
+        </p>
+
+
+      </article>
+
+
+
+
+
+
+
+
+      <article class="gauche">
+
+
+        <h2>
+          Réédition de Mariama Bâ par Angèle Diabang
+        </h2>
+
+
+
+        <img src="reedition.jpg" alt="Mariama Bâ et Angèle Diabang">
+
+
+
+        <p>
+
+          Quarante-cinq ans après sa publication,
+
+          <strong>
+            Une si longue lettre
+          </strong>
+
+          retrouve une nouvelle vie.
+
+          Angèle Diabang offre une nouvelle interprétation
+          de cette œuvre majeure où les voix féminines occupent
+          une place centrale.
+
+        </p>
+
+
+      </article>
+
+
+
+
+
+
+
+
+      <article class="droite">
+
+
+        <h2>
+
+          <em>Terre ceinte</em> adapté en podcast par RFI
+
+        </h2>
+
+
+
+        <img src="reedition terre ceinte.jpeg" alt="Roman Terre ceinte">
+
+
+
+        <p>
+
+          Le roman
+
+          <strong>
+            Terre ceinte
+          </strong>
+
+          est adapté en podcast afin de faire découvrir
+          son univers de résistance, de mémoire et d’espoir
+          à travers une création sonore.
+
+        </p>
+
+
+      </article>
+
+
+
+
+    </section>
+
+
+
+  </main>
+
+
+
+
+
+
+  <footer class="footer">
+
+
+    <p>
+
+      © 2026 Les nouvelles voix du 221 🌺
+
+      <br>
+
+      "Les paroles d’hier, la plume d’aujourd’hui"
+
+    </p>
+
+
   </footer>
-</body>
-</html>
 
+
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
